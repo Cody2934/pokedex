@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header>
+  <img
+    src=""
+  />
+  <h1>
+    GOTTA CATCH EM ALL!
+  </h1>
+</header>
+`;
