@@ -12,7 +12,7 @@ export default class PokeList extends Component {
       return (
 
         <div>
-            <ul>
+            <ul className="mainDiv">
                 {pokeList}
             </ul>
         </div>
