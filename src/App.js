@@ -1,18 +1,29 @@
-import React from 'react';
-import './App.css';
+// importing react
+import React, { Component } from 'react';
+// importing my files
 import Header from "./Header.js";
 import PokeList from "./PokeList.js";
-import PokeItem from "./PokeItem.js";
-// import request from 'superagent';
+//importing from npm for api
+import request from 'superagent';
+// styling
+import './App.css';
 
-function App() {
+export default class APP extends Component {
+  state = { pokeData: [] };
+
+  async componentDidMount() {
+    const pokeData = await request.get('https://alchemy-pokedex.herokuapp.com/api/pokedex')
+
+    this.setState({ pokeData: pokeData.body.results})
+  };
+  
+render() {
+
   return (
     <div>
       <Header/>
-      <PokeList/>
-      {/* <PokeItem/> */}
+      <PokeList pokemon={this.state.pokeData}/>
     </div>
   );
 }
-
-export default App;
+}

@@ -1,30 +1,29 @@
 import React, { Component } from 'react'
-import pokedata from './data.js';
 
 export default class PokeItem extends Component {
     render() {
-        console.log(this.props.image)
+        console.log(this.props.pokemon)
         return ( 
-        <li key= {pokedata._id}>
+        <li>
 
             {/* Pokemon Name */}
             <div className="pokemon-name">
-                <h2>{this.props.image.pokemon}</h2>
+                <h2>{this.props.pokemon.pokemon}</h2>
             </div>
 
             {/* Pokemon Image */}
             <div className="pokemon-image">
-                <img src={this.props.image.url_image}/>
+                <img src={this.props.pokemon.url_image}/>
             </div>
 
             {/* Pokemon Type */}
             <div>
-                <p className="pokemon-type">Type: {this.props.image.type_1}</p>
+                <p className="pokemon-type">Type: {this.props.pokemon.type_1}</p>
             </div>
 
             {/* Pokemon Speed */}
             <div>
-                <p className="pokemon-speed">Speed: {this.props.image.speed}</p>
+                <p className="pokemon-speed">Speed: {this.props.pokemon.speed}</p>
             </div>
 
         </li>
