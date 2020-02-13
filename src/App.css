@@ -1,38 +1,33 @@
-.App {
+* {
   text-align: center;
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-image: url(https://static2.gamerantimages.com/wordpress/wp-content/uploads/pokemon-inside-a-pokeball-pile.jpg?q=50&fit=crop&w=738&h=461);
+  background-color: black;
+  background-size: cover;
+  font-size: xx-large;
+  text-align: center;
+  color: yellow;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+div {
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  text-transform: capitalize;
+  font-size: xx-large;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  background: white;
 }
+

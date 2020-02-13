@@ -12,7 +12,7 @@ export default class PokeItem extends Component {
             </div>
 
             {/* Pokemon Image */}
-            <div className="pokemon-image">
+            <div id="image" className="pokemon-image">
                 <img src={this.props.pokemon.url_image}/>
             </div>
 
