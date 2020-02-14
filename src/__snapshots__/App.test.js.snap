@@ -3,17 +3,30 @@
 exports[`renders correctly 1`] = `
 <div>
   <header>
-    <img
-      src=""
-    />
     <h1>
-      GOTTA CATCH EM ALL!
+      Who's That Pokemon!?
     </h1>
   </header>
-  <div>
-    <ul
-      className="mainDiv"
-    />
+  <div
+    id="search"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        value=""
+      />
+      <button>
+        Search
+      </button>
+    </form>
   </div>
+  <p>
+    No results, try again!
+  </p>
+  <ul
+    className="mainDiv"
+  />
 </div>
 `;

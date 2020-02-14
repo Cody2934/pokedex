@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<header>
-  <h1>
-    Who's That Pokemon!?
-  </h1>
-</header>
+<ul
+  className="mainDiv"
+/>
 `;
