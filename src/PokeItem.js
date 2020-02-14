@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 export default class PokeItem extends Component {
     render() {
-        console.log(this.props.pokemon)
         return ( 
+        
         <div className="thePoke">
 
             {/* Pokemon Name */}
-            <h2 className="pokeName">{this.props.pokemon.pokemon}</h2>
+            {/* <h2 className="pokeName">{this.props.pokemon.name}</h2> */}
 
             {/* Pokemon Image */}
             <img className="pokePics" src={this.props.pokemon.url_image}/>
@@ -28,6 +28,7 @@ export default class PokeItem extends Component {
             <p className="pokeInfo">Type: {this.props.pokemon.type_1}</p>
 
         </div>
+        
         )
     }
 }

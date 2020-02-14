@@ -5,19 +5,15 @@ export default class PokeList extends Component {
 
     render() {
 
-        const pokeData = this.props.pokemon;
-        const pokeList = pokeData.map(item => { 
-            return <PokeItem pokemon={item} key={item.doesntmatter} />
+        const { pokemon } = this.props;
+        const pokeList = pokemon.map(item => { 
+            return <PokeItem pokemon={item} />
     })
       return (
+        <ul className="mainDiv">
+            {pokeList}
+        </ul>
 
-        <div>
-            <ul className="mainDiv">
-                {pokeList}
-            </ul>
-        </div>
-
-                
-            );
-}
+        )
+    }
 }
