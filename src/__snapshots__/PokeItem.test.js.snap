@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="thePoke"
+>
+  <img
+    className="pokePics"
+  />
+  <p
+    className="pokeInfo"
+  >
+    HP: 
+  </p>
+  <p
+    className="pokeInfo"
+  >
+    Attack: 
+  </p>
+  <p
+    className="pokeInfo"
+  >
+    Defense: 
+  </p>
+  <p
+    className="pokeInfo"
+  >
+    Speed: 
+  </p>
+  <p
+    className="pokeInfo"
+  >
+    Type: 
+  </p>
+</div>
+`;

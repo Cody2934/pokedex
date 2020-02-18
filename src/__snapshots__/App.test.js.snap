@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <header>
+    <h1>
+      Who's That Pokemon!?
+    </h1>
+  </header>
+  <div
+    id="search"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        value=""
+      />
+      <button>
+        Search
+      </button>
+    </form>
+  </div>
+  <p>
+    No results, try again!
+  </p>
+  <ul
+    className="mainDiv"
+  />
+</div>
+`;
